@@ -58,21 +58,21 @@ def lart(inp, me=None, nick=None, conn=None, notice=None):
     me(phrase.format(**values))
 
 
-@hook.command
-def kill(inp, me=None, nick=None, conn=None, notice=None):
-    "kill <user> -- Makes the bot kill <user>."
-    target = inp.strip()
-
-    if " " in target:
-        notice("Invalid username!")
-        return
-
-    # if the user is trying to make the bot slap itself, slap them
-    if target.lower() == conn.nick.lower() or target.lower() == "itself":
-        target = nick
-
-    values = {"user": target}
-    phrase = random.choice(kills)
-
-    # act out the message
-    me(phrase.format(**values))
+#@hook.command
+#def kill(inp, me=None, nick=None, conn=None, notice=None):
+#    "kill <user> -- Makes the bot kill <user>."
+#    target = inp.strip()
+#
+#    if " " in target:
+#        notice("Invalid username!")
+#        return
+#
+#    # if the user is trying to make the bot slap itself, slap them
+#    if target.lower() == conn.nick.lower() or target.lower() == "itself":
+#        target = nick
+#
+#    values = {"user": target}
+#    phrase = random.choice(kills)
+#
+#    # act out the message
+#    me(phrase.format(**values))
