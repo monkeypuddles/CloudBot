@@ -32,7 +32,7 @@ def mcping_connect(host, port):
 
     except:
         return "Error pinging " + host + ":" + str(port) +\
-        ",Monkey dosent think its up? Double-check your address, or make a real server!"
+        ", Monkey dosent think its up? Double-check your address, or make a real server!"
 
 
 @hook.command(autohelp=False)
