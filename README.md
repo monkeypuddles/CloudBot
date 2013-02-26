@@ -1,4 +1,5 @@
-# CloudBot/DEV
+# Gerbalbot is a fork of CloudBot, only to be used by Public-craft admins for private irc use. Do not use our bot.
+# Instead grab the zip from below, and make your own.
 
 ## About
 
